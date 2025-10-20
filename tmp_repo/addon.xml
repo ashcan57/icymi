@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.icymi"
+       name="ICYM Repository"
+       version="1.0.0"
+       provider-name="ashcan57"
+       type="xbmc.addon.repository">
+
+    <requires>
+        <import addon="xbmc.addon.repository" version="2.0.0"/>
+    </requires>
+
+    <extension point="xbmc.addon.repository" version="1.0">
+        <info>
+            <checksum>md5</checksum>
+            <!-- This URL points to the *root* of the GitHub Pages site -->
+            <datadir url="https://ashcan57.github.io/icymi/"/>
+        </info>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary>Repository that delivers the DAB19 build installer.</summary>
+        <description>
+            Contains a single script that downloads the full DAB19 build from Dropbox,
+            extracts it, and restarts Kodi.
+        </description>
+        <platform>all</platform>
+        <icon>icon.png</icon>
+    </extension>
+</addon>
