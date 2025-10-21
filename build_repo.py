@@ -1,4 +1,5 @@
 import os, zipfile, hashlib
+import xml.etree.ElementTree as ET
 
 def zipdir(path, zipname):
     with zipfile.ZipFile(zipname, 'w', zipfile.ZIP_DEFLATED) as z:
@@ -31,13 +32,24 @@ def build_repo(base_path):
     addons_xml += '</addons>'
     with open(os.path.join(base_path, 'addons.xml'), 'w', encoding='utf-8') as f:
         f.write(addons_xml)
-    md5 = hashlib.md5(addons_xml.encode('utf-8')).hexdigest()
-    with open(os.path.join(base_path, 'addons.xml.md5'), 'w') as f:
+        md5 = hashlib.md5(addons_xml.encode('utf-8')).hexdigest()
+    with open(os.path.join(base_path, 'addons.xml.md5'), 'w', encoding='utf-8') as f:
         f.write(md5)
-
+    print("Built addons.xml and md5, and created addon zip files.")
+    return addons_xml  # ✅ Add this line
 if __name__ == "__main__":
-    build_repo('.')
-    print("Repository built successfully!")
+    addons_xml = build_repo('.')  # builds and returns the XML text
+    try:
+        ET.fromstring(addons_xml)
+        print("✅ addons.xml sanity check passed — valid XML!")
+    except ET.ParseError as e:
+        print("❌ addons.xml sanity check failed:")
+        print(f"   {e}")
+
+
+
+
+
 
 
 
