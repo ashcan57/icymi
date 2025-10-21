@@ -1,34 +1,18 @@
-<addon id="plugin.program.icymi" version="1.0.0" name="ICYMI Program" provider-name="ashcan57">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-    </requires>
-    <extension point="xbmc.python.script" library="default.py">
+<addon id="plugin.program.icymi"
+       name="ICYMI"
+       version="1.0.0"
+       provider-name="ashcan57">
+    <extension point="xbmc.python.pluginsource"
+               library="default.py">
         <provides>executable</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>ICYMI Build Installer</summary>
-        <description>
-            Installs or updates the ICYMI build for Kodi.
-            It downloads and applies the build archive from Dropbox.
-        </description>
-        <disclaimer>Use responsibly; this replaces your Kodi configuration.</disclaimer>
+        <summary>ICYMI add-on</summary>
+        <description>ICYMI program add-on by ashcan57.</description>
         <platform>all</platform>
-    </extension>
-</addon><addon id="plugin.program.icymi" version="1.0.0" name="ICYMI Program" provider-name="ashcan57">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-    </requires>
-    <extension point="xbmc.python.script" library="default.py">
-        <provides>executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>ICYMI Build Installer</summary>
-        <description>
-            Installs or updates the ICYMI Kodi build from Dropbox.
-            Downloads and applies the build archive.
-        </description>
-        <disclaimer>Use responsibly; this replaces your Kodi configuration.</disclaimer>
-        <platform>all</platform>
+        <size>247000000</size>
+        <source>https://github.com/ashcan57/icymi/releases/download/v1.0.0/dab21.zip</source>
     </extension>
 </addon>
+
 
