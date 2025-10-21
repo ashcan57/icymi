@@ -1,0 +1,12 @@
+<addon id="repository.icymi" name="ICYMI Repository" version="1.0.0" provider-name="ashcan57">
+  <extension point="xbmc.addon.repository" name="ICYMI Repository">
+    <info compressed="false">https://ashcan57.github.io/icymi/addons.xml</info>
+    <checksum>https://ashcan57.github.io/icymi/addons.xml.md5</checksum>
+    <datadir zip="true">https://ashcan57.github.io/icymi/</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Repository for ICYMI Kodi addons</summary>
+    <description>Install or update ICYMI addons and tools.</description>
+    <platform>all</platform>
+  </extension>
+</addon>
