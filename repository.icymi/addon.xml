@@ -4,14 +4,15 @@
        provider-name="ashcan57">
     <extension point="xbmc.addon.repository"
                name="ICYMI Repository">
-        <info compressed="false">https://ahcan57.github.io/icymi/addons.xml</info>
-        <checksum>https://ahcan57.github.io/icymi/addons.xml.md5</checksum>
-        <datadir zip="true">https://github.com/ahcan57/icymi/releases/download/v1.0.0/</datadir>
+        <info compressed="false">https://ashcan57.github.io/icymi/addons.xml</info>
+        <checksum>https://ashcan57.github.io/icymi/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/ashcan57/icymi/releases/download/v1.0.0/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>ICYMI repository by ashcan57</summary>
-        <description>Hosts plugin.program.icymi and related add-ons.</description>
+        <description>Hosts plugin.program.icymi add-on.</description>
         <platform>all</platform>
     </extension>
 </addon>
+
 
